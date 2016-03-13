@@ -3,16 +3,10 @@
   <title>PHP Test</title>
  </head>
  <body>
-<?php
+  <?php
   include('rssclass.php');
-  $feedlist = new rss('http://feeds2.feedburner.com/9lesson');
+  $feedlist = new rss('https://www.biblegateway.com/usage/votd/rss/votd.rdf?$version_id');
   echo $feedlist->display(9,"9lessons");
- 
-  $feedlist = new rss('http://feeds.feedburner.com/nettuts');
-  echo $feedlist->display(9,"Nettuts");
- 
-  $feedlist = new rss('http://feeds.labnol.org/labnol');
-  echo $feedlist->display(9,"Labnol");
   ?> 
  </body>
 </html>
