@@ -4,9 +4,8 @@
  </head>
  <body>
   <?php
-  include('rssclass.php');
-  $feedlist = new rss('https://www.biblegateway.com/usage/votd/rss/votd.rdf?$version_id');
-  echo $feedlist->display(9,"9lessons");
+$file = file_get_contents('https://www.biblegateway.com/usage/votd/rss/votd.rdf?$version_id');
+echo $file;
   ?> 
  </body>
 </html>
