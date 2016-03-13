@@ -4,7 +4,7 @@
  </head>
  <body>
   <?php
-$file = file_get_contents('https://www.biblegateway.com/usage/votd/rss/votd.rdf?$version_id');
+$file = file_get_contents('http://labs.bible.org/api/?passage=votd');
 echo $file;
   ?> 
  </body>
